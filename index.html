@@ -1,1 +1,34 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fullscreen Portrait Video (Cropped as Landscape)</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: black;
+    }
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;        /* fills screen, crops as needed */
+      object-position: center;  /* centers the crop horizontally */
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop playsinline>
+    <source src="IMG_2541.MOV" type="video/quicktime">
+    Your browser does not support the video tag.
+  </video>
+</body>
+</html>
