@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Fullscreen Portrait Video (Cropped as Landscape)</title>
+  <title>Boltzroom Video</title>
   <style>
     * {
       margin: 0;
@@ -15,19 +15,19 @@
       background: black;
     }
     video {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      object-position: center;
       position: absolute;
       top: 0;
       left: 0;
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;        /* fills screen, crops as needed */
-      object-position: center;  /* centers the crop horizontally */
     }
   </style>
 </head>
 <body>
   <video autoplay muted loop playsinline>
-    <source src="IMG_2541.MOV" type="video/quicktime">
+    <source src="https://rosarioanthonywaya.github.io/video/Boltzroom_may.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </body>
